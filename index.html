@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="btn">Нажми на меня!</button>
+
+    <script>
+        const button = document.getElementById('btn');
+
+        button.addEventListener('click', function () {
+            button.textContent = 'Вы нажали на меня!';
+        });
+    </script>
+
+
+    <div id="square"></div>
+
+    <script>
+        const square = document.getElementById('square');
+
+        document.addEventListener('mousemove', function (event) {
+            square.style.left = event.clientX - 25 + 'px';  
+            square.style.top = event.clientY - 25 + 'px'; 
+        });
+    </script>
+
+
+
+<img src="img/5467647935547307841.jpg" alt="g">
+</body>
+
+</html>
